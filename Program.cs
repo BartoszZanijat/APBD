@@ -22,9 +22,9 @@ class Program
         }
 
         int suma = 0;
-        foreach (int liczba in values)
+        for (int i = 0; i < values.Length; i++)
         {
-            suma += liczba;
+            suma += values[i];
         }
         return (double)suma / values.Length;
     }
