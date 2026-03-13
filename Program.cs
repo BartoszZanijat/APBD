@@ -6,11 +6,14 @@ class Program
     {
         Console.WriteLine("Stats. Pending...");
 
-        // Przykładowe użycie metody CalculateAverage
         int[] dane = { 10, 20, 30, 40, 50 };
         double srednia = CalculateAverage(dane);
         Console.WriteLine($"Średnia z podanych liczb: {srednia}");
+
+        int max = CalculateMax(dane);
+        Console.WriteLine($"Maksymalna wartość: {max}");
     }
+
     static double CalculateAverage(int[] values)
     {
         if (values == null || values.Length == 0)
@@ -24,5 +27,23 @@ class Program
             suma += liczba;
         }
         return (double)suma / values.Length;
+    }
+
+    static int CalculateMax(int[] values)
+    {
+        if (values == null || values.Length == 0)
+        {
+            return int.MinValue;
+        }
+
+        int max = values[0];
+        foreach (int liczba in values)
+        {
+            if (liczba > max)
+            {
+                max = liczba;
+            }
+        }
+        return max;
     }
 }
