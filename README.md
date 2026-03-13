@@ -1,1 +1,1 @@
-Cos tutaj.
+Zgodnie z poleceniem utworzyło osobną gałaz i zmienilem projekt tak by wartosci na obu projektach były rozne. Przy merge git nie mogl zrobic fast forward, bo stracilby tamten commit z maina. Zamiast tego zrobil nowy merge commit, ktory polaczyl historie obu galezi. Dzieki temu wszystko jest zachowane.
