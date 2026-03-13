@@ -6,7 +6,6 @@ class Program
     {
         Console.WriteLine("Stats. Pending...");
 
-        // Przykładowe użycie metody CalculateAverage
         int[] dane = { 10, 20, 30, 40, 50 };
         double srednia = CalculateAverage(dane);
         Console.WriteLine($"Średnia z podanych liczb: {srednia}");
