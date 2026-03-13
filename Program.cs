@@ -21,10 +21,10 @@ class Program
             return 0;
         }
 
-        int total = 0;
+        int suma = 0;
         foreach (int liczba in values)
         {
-            total += liczba;
+            suma += liczba;
         }
         return (double)total / values.Length;
     }
