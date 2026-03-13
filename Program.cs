@@ -21,12 +21,12 @@ class Program
             return 0;
         }
 
-        int suma = 0;
+        int total = 0;
         foreach (int liczba in values)
         {
-            suma += liczba;
+            total += liczba;
         }
-        return (double)suma / values.Length;
+        return (double)total / values.Length;
     }
 
     static int CalculateMax(int[] values)
