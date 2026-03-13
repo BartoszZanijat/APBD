@@ -49,6 +49,19 @@ class Program
 
     static int CalculateMin(int[] values)
 {
-    return 0;
+        if (values == null || values.Length == 0)
+    {
+        return int.MaxValue;
+    }
+
+    int min = values[0];
+    foreach (int liczba in values)
+    {
+        if (liczba < min)
+        {
+            min = liczba;
+        }
+    }
+    return min;
 }
 }
